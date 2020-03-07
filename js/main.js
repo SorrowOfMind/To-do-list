@@ -15,7 +15,7 @@ const date = {
     }
 };
 
-
+//TASKS HANDLING
 const taskManager = {
     taskList : [],
     id: 0,
@@ -26,13 +26,13 @@ const taskManager = {
         faded: 'fade'
     },
 
-    selectElements: function() {
+    selectElements() {
         this.list = document.querySelector('.list');
         this.input = document.getElementById('input');
         this.refresh = document.querySelector('.refresh');
     },
 
-    createTask: function(content, id, done, removed) {
+    createTask(content, id, done, removed) {
         if (removed) {return;}
 
         const active = done ? this.iconClasses.checked : this.iconClasses.unchecked;
@@ -49,7 +49,7 @@ const taskManager = {
         this.list.insertAdjacentHTML('beforeend', item);
     },
 
-    addTask: function(e) {
+    addTask(e) {
         if (e.keyCode === 13 || e.which === 13) {
             const content = this.input.value;
             if (content) {
