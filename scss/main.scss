@@ -1,0 +1,11 @@
+@import url('https://fonts.googleapis.com/css?family=Pacifico&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Neucha&display=swap');
+
+@import './utils/reset';
+@import './utils/vars';
+@import './utils/general';
+@import './utils/mixins';
+
+@import './components/header';
+@import './components/main-list';
+@import './components/task-input';

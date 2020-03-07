@@ -1,0 +1,10 @@
+@mixin flex {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+@mixin dropShadow ($x, $y, $blur, $color) {
+    -webkit-filter: drop-shadow($x $y $blur $color);
+    filter: drop-shadow($x $y $blur $color);
+}

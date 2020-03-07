@@ -1,0 +1,11 @@
+.tasks-user {
+    background-color: $color-paper;
+    height: 9%;
+    @include flex;
+    .tasks-user__input {
+        width: 95%;
+        font-size: $font-basic;
+        font-family: $font-task;
+        padding: .8rem 1.5rem;
+    }
+}

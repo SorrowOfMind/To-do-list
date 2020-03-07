@@ -1,0 +1,57 @@
+.tasks-list {
+    background-color: $color-paper;
+    font-family: $font-task;
+    height: 61%;
+    @include flex;
+    .list {
+        background-color: $color-white;
+        height: 95%;
+        width: 95%;
+        overflow: auto;
+        .item {
+            display: block;
+            font-size: $font-basic;
+            padding: 1.5rem;
+            position: relative;
+            display: flex;
+            justify-content: flex-start;
+            align-items: center;
+            &:before {
+                content: '';
+                position: absolute;
+                bottom: 0;
+                height: 1px;
+                width: 90%;
+                background-color: $color-line;
+            }
+            .trashbin {
+                position: absolute;
+                right: 0;
+                padding: 2rem;
+                transition: all .2s;
+                &:hover {
+                    color: red;
+                }
+            }
+            .item__text {
+                width: 90%;
+                overflow: hidden;
+                padding: 0 1.5rem;
+                word-wrap: break-word;
+            }   
+        }
+    }
+}
+
+/*JS classes*/
+.fade {
+    color: $color-line;
+}
+
+.fa-check-square {
+    color: rgb(24, 151, 24);
+}
+
+.fa-square {
+    color: $color-paper;
+}
